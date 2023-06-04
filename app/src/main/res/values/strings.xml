@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyElectricBills</string>
+    <string name="copyright">Copyright (c) 2023</string>
+    <string name="Student_Name"> NAME: MOHAMMAD NAZMI BIN ROSLI</string>
+    <string name="Group">Group: RCS2405A</string>
+    <string name="Student_Number">Student Number: 2021147215</string>
+    <string name="Programme_Code">Programme_Code: ICT602</string>
+    <string name="Source_Code">Source Code</string>
+
+</resources>

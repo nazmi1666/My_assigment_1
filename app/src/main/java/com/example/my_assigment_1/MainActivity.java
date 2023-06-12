@@ -90,14 +90,14 @@ public class MainActivity extends AppCompatActivity {
     private double calculateCharges(double unitsUsed) {
         double totalCharges = 0.0;
 
-        if (unitsUsed <= 200) {
+        if (unitsUsed >= 1 && unitsUsed <= 200) {
             totalCharges = unitsUsed * 0.218;
-        } else if (unitsUsed <= 300) {
-            totalCharges = 200 * 0.218 + (unitsUsed - 200) * 0.334;
-        } else if (unitsUsed <= 600) {
-            totalCharges = 200 * 0.218 + 100 * 0.334 + (unitsUsed - 300) * 0.516;
-        } else if (unitsUsed > 600) {
-            totalCharges = 200 * 0.218 + 100 * 0.334 + 300 * 0.516 + (unitsUsed - 600) * 0.546;
+        } else if (unitsUsed >= 201 && unitsUsed <= 300) {
+            totalCharges = (200 * 0.218) + ((unitsUsed - 200) * 0.334);
+        } else if (unitsUsed >= 301 && unitsUsed <= 600) {
+            totalCharges = (200 * 0.218) + (100 * 0.334) + ((unitsUsed - 300) * 0.516);
+        } else if (unitsUsed > 601 && unitsUsed <= 900) {
+            totalCharges = (200 * 0.218) + (100 * 0.334) + (300 * 0.516) + ((unitsUsed - 600) * 0.546);
         }
 
         return totalCharges;
